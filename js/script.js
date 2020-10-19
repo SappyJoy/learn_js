@@ -18,7 +18,7 @@ const answers = [];
 console.log(typeof answers);
 // console.log(typeof null);
 
-const category = 'toys';
+const category = 'joys';
 
 console.log(`https://someurl.com/${category}/5`);
 
