@@ -8,14 +8,14 @@
 // const answer = prompt('Do u want to hack smth?');
 // console.log(answer);
 
-// const answers = [];
+const answers = [];
 
 // answers[0] = prompt('Whats your name?', '');
 // answers[1] = prompt('How old are you?', '');
 
 // document.write(answers);
 
-// console.log(typeof answers);
+console.log(typeof answers);
 // console.log(typeof null);
 
 const category = 'toys';
