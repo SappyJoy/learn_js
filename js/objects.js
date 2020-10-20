@@ -32,7 +32,7 @@ function logObj(obj, tab = 0) {
   for (let key in obj) {
     if (typeof obj[key] === 'object') {
       console.log(tabs + '  ' + `${key}:`);
-      destructure(obj[key], tab + 1);
+      logObj(obj[key], tab + 1);
     } else {
       console.log(tabs + '  ' + `${key}: ${obj[key]},`);
     }
