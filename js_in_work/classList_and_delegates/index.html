@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mr Robot</title>
+	<style>
+		@font-face {
+            font-family: MrRobot;
+			src: url("MrRobot.ttf");
+        }
+
+		* {
+            font-family: MrRobot,serif;
+            margin: 0;
+            padding: 0;
+			box-sizing: border-box;
+		}
+
+		ul, li {
+			list-style-type: none;
+		}
+
+		body {
+			background-color: #a70000;
+		}
+
+		.content {
+            margin: 8px auto;
+			max-width: 95%;
+			width: 60%;
+			background-color: #212121;
+			border-radius: 2px;
+            /*height: calc(100vh - 16px);*/
+            padding: 30px;
+		}
+		
+		.logo {
+            text-align: center;
+            margin: 100px;
+			font-size: 56px;
+			color: #a70000;
+		}
+
+		.list_of_hacks {
+
+		}
+
+		.hack {
+            margin: 20px 0;
+			border: 5px #a70000 solid;
+			border-radius: 2px;
+            padding: 10px;
+			color: #a70000;
+			font-size: 16px;
+			width: fit-content;
+		}
+
+		.hack__title {
+			font-size: 24px;
+		}
+
+		.hack__code {
+            padding: 10px;
+			background-color: black;
+			border-radius: 5px;
+			color: #FFFFFF;
+            line-height: 1.6;
+		}
+
+		.btn-block {
+			border: 5px #a70000 double;
+			border-radius: 2px;
+			padding: 10px;
+		}
+
+		.btn-block button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            /*background-color: #a70000;*/
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #424242;
+            margin-bottom: 10px;
+			margin-left: 5px;
+			user-select: none;
+		}
+
+		/*.btn-block button:hover {*/
+        /*    background-color: #6a0000;*/
+		/*}*/
+
+		.btn-block button:active {
+            /*background-color: #a70000;*/
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+		}
+
+		.red {
+			background-color: #a70000;
+		}
+
+		.blue {
+			background-color: midnightblue;
+		}
+
+		.green {
+			background-color: darkolivegreen;
+		}
+
+		.purple {
+			background-color: darkorchid;
+		}
+	</style>
+	<script defer src="script.js"></script>
+</head>
+<body>
+<div class="content">
+	<div class="header">
+		<div class="logo">
+			Mr Robot
+		</div>
+	</div>
+
+	<ul class="list_of_hacks">
+		<li>
+			<div class="hack">
+				<div class="hack__title">
+					If you want to watch StarWars in terminal
+				</div>
+				<div class="hack__code">
+					telnet towel.blinkenlights.nl
+				</div>
+			</div>
+			<div class="hack">
+				<div class="hack__title">
+					What about the knowing the current weather of any city around the world. In your terminal, just type
+				</div>
+				<div class="hack__code">
+					curl http://wttr.in/your_city_name
+				</div>
+			</div>
+			<div class="hack">
+				<div class="hack__title">
+					You want to look like a badass hacker ? (Kind of)
+					Install hollywood, your terminal will split and look like you’re doing a lot of cool things
+				</div>
+				<div class="hack__code">
+					<pre>
+sudo apt-add-repository ppa:hollywood/ppa
+sudo apt-get update
+sudo apt-get install hollywood
+sudo apt-get install byobu #Used to split your terminal, very useful</pre>
+				</div>
+			</div>
+			<div class="hack">
+				<div class="hack__title">
+					If you want to watch StarWars in terminal
+				</div>
+				<div class="hack__code">
+					telnet towel.blinkenlights.nl
+				</div>
+			</div>
+		</li>
+	</ul>
+
+	<div id="first" class="btn-block">
+		<button class="red">Press</button>
+		<button class="red">Press</button>
+		<button class="red">Press</button>
+		<button class="red">Press</button>
+		<button class="red">Press</button>
+		<button class="red">Press</button>
+	</div>
+</div>
+</body>
+</html>
